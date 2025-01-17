@@ -8,7 +8,7 @@ evolution_names = {
 }
 
 def evolve_pokemon():
-    global pokemon_level, pokemon_name
+    global pokemon_level, pokemon_name#allows the reader to evolve when the reach a high enough level
     if pokemon_name == "Bulbasaur" and pokemon_level >= 10:
         pokemon_name = "Ivysaur"
         print(f"{pokemon_name} has evolved into Ivysaur!")
@@ -34,7 +34,7 @@ def game():
         print("Invalid choice. Defaulting to Bulbasaur.")
         pokemon_name = "Bulbasaur"
 
-    while True:
+    while True: #gives the user options on what they would like to do each day 
         print("\nMenu:")
         print("1. Train (Increase level by 1)")
         print("2. Gym Battle (Increase level by 2 if win, 0 if lose)")
@@ -45,7 +45,7 @@ def game():
 
         if option == '1':
             pokemon_level += 1
-            print("You trained your Pokemon! Level increased by 1.")
+            print("You trained your Pokemon! Level increased by 1.")#defines each function by giving the pokemon a level up for not
             evolve_pokemon()
         elif option == '2':
             if random.choice([True, False]):
