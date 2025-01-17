@@ -2,7 +2,7 @@
 #Initiation
 import random
 #Functions
-def guessinggame():
+def guessinggame():#variable that defined the game
     print("Welcome to the guessing game!")
     diff = input("Please enter a level of difficulty you would like to try this guessing game at (easy, medium, hard): ")
     if diff == "easy":
@@ -154,7 +154,7 @@ def guessinggame():
             else:
                 print("Have a great rest of your day.")
     elif diff == "medium":
-        print("Welcome to the mediun guessing game, you will be guessing a number from 1-50!")
+        print("Welcome to the mediun guessing game, you will be guessing a number from 1-50!")#this is the meduim level of the game
         num = random.randint(1,50)
         guess = input("Enter your guess (1,50): ")
         if int(guess) > num:
@@ -302,7 +302,7 @@ def guessinggame():
             else:
                 print("Have a great rest of your day.")
     elif diff == "hard":
-        print("Welcome to the hard guessing game, you will be guessing a number from 1-100!")
+        print("Welcome to the hard guessing game, you will be guessing a number from 1-100!") #hard level
         num = random.randint(1,100)
         guess = input("Enter your guess (1,100): ")
         if int(guess) > num:
