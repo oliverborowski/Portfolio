@@ -3,7 +3,7 @@
 #Initiate
 import random
 #Functions
-wins = 0
+wins = 0 #keep tracks of the wins and losses 
 def won():
     global wins
     wins = wins + 1
@@ -14,12 +14,12 @@ def lost():
 
 #Main
 print("Welcome to the Multiplication Quiz")
-type = input("Would you like to play with a limit on questions or endless (limit or endless): ")
+type = input("Would you like to play with a limit on questions or endless (limit or endless): ")#lets the user devide the amonut of quetions 
 type = type.lower()
 if type == "limit":
     level = input("What level of questions would you like to answer (easy, medium, or hard): ")
     level = level.lower()
-    if level == "easy":
+    if level == "easy":#lets the user decide the difficulty
         questions = int(input("How many questions would you like to have in the quiz: "))
         for i in range(questions):
             firstnum = random.randint(1,10)
@@ -63,7 +63,7 @@ if type == "limit":
             else:
                 print("Incorrect.")
                 lost()
-        print("You got " + str(wins) + " out of "+ str(questions) + " questions correct!")
+        print("You got " + str(wins) + " out of "+ str(questions) + " questions correct!")#shows the correct amount of questoins
     else:
         print("Wrong input")
 elif type == "endless":
@@ -76,6 +76,6 @@ elif type == "endless":
         if solution == answer:
             print("Correct!")
             won()
-        else:
+        else:#if the user does not guess the number
             print("Incorrect.")
             lost()
