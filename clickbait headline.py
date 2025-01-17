@@ -1,12 +1,13 @@
 #Oliver Borowski
 #Clickbait generator
 #Functions
-def believe_headline():
+#offers three different types of headlines for the reader to devide from
+def believe_headline(): #healine tht makes sense
     noun = input("Please enter a noun: ")
     ppronoun = input("Please enter a possesive pronoun: ")
     place = input("Please enter a place: ")
     print("You won't believe what this " + noun + " found in " + ppronoun + " " + place + ".")
-def surprising_headline():
+def surprising_headline():#healine that will likely surpruse the user
     num = input("Please enter a number: ")
     adj = input("Please enter a adjective: ")
     pronoun = input("Please enter a pronoun: ")
