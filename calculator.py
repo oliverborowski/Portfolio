@@ -1,7 +1,7 @@
 #OLIVER BOROWSKI 
 #Init
 
-#Functions
+#Functions define which operation the user has selected
 def add(num1, num2):
     ans = num1 + num2
     print("Your answer is: " + str(ans))
@@ -17,13 +17,13 @@ def mul(num1, num2):
 def simplecalculator():
     print("Welcome Preschoolers to Simple Calculator!")
 while True:
-    print("Enter an operation: ")
+    print("Enter an operation: ") #ask the user for an opperation
     print("""1.Addition
     2.Subtraction
     3.Division
     4.Multiplication
     5.Quit""")
-    operation = int(input("(1-5)Operation: "))
+    operation = int(input("(1-5)Operation: "))#uses the number and function given to compute the results
     if operation == 1:
         int1 = int(input("Enter your first number: "))
         int2 = int(input("Enter your second number: "))
