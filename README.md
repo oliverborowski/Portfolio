@@ -14,3 +14,7 @@ Clickbait Headline:
 
 Guessing Game: 
   Asks the player to choose a difficulty then akses them for a series of numbers. Before the player guesses each of the next number the program tells them if the number they previously guesses is too high or too low. This allows the player to slowly reach the number while only giving them three guesses. The key features in this prgram are one the difficulty selector, and the ability to change the range based on what level is selected. 
+
+Black Jack: Allows the user to play games of blackjack againt the computer. The user can hit and stand wihle following the traditional rules of blackjack. The program generates a random deck and hand for the user each time they wish to play. 
+
+Word Counter: This program takes any input and counts the amount of words. This input could be the bible, declaration of independance, or even the constitution. This function can be extremely useful to a student in their years of school. 
